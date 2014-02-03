@@ -1,0 +1,72 @@
+
+12/15/13, 12:11:30 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/fonts/glyphicons-halflings-regular.woff",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/bootstrap.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:31 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/fonts/glyphicons-halflings-regular.eot",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/bootstrap.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:31 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/fonts/glyphicons-halflings-regular.eot?",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/bootstrap.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:31 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/fonts/glyphicons-halflings-regular.ttf",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/bootstrap.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:31 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/gradient/g30.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:31 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/fonts/glyphicons-halflings-regular.svg",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/bootstrap.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/shadow3.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/shadow2.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/boxed_bgtile.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/bullets.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/navigdots_bgtile.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:33 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/gradient/g40.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrow_left.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrow_right.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/bullets2.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/navigdots.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/bullet_boxed.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:36 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrowleft.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:38 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/transparent.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:38 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrowright.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:38 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrow_left2.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:38 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/assets/coloredbg.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+12/15/13, 12:11:38 AM - ERROR: Download of "http://premiumlayers.com/demos/vertikal/images/arrow_right2.png",
+	referenced from "http://premiumlayers.com/demos/vertikal/css/settings.css",
+	failed with error code -1100 (File does not exist.)
+
+---------------------

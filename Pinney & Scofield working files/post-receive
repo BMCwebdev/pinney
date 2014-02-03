@@ -1,0 +1,3 @@
+#!/bin/sh
+# Save this in: PATH_TO_REPO/.git/hooks/post-receive
+GIT_WORK_TREE=../ git checkout -f
