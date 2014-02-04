@@ -752,6 +752,12 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .container:before,
 .container:after {
@@ -918,6 +924,9 @@ pre code {
   .container {
     max-width: 750px;
   }
+  .container2 {
+    max-width: 750px;
+  }
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -1070,6 +1079,9 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
+    max-width: 970px;
+  }
+  .container2 {
     max-width: 970px;
   }
   .col-md-1,
@@ -1233,6 +1245,9 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
+    max-width: 1170px;
+  }
+  .container2 {
     max-width: 1170px;
   }
   .col-lg-1,
