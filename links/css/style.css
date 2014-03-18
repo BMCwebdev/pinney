@@ -207,7 +207,9 @@ div#mainmenu {
     position:absolute;
     left:-108px;
     top:130px;
+/*
     height:159px;
+*/
     width:120px;
     z-index:10;
 }
@@ -223,7 +225,7 @@ div#mainmenu ul li {
     color:#FFF;
     line-height:50px;
     text-shadow:#444 1px 1px 0;
-    width:120px;
+    width:145px;
     position:relative;
     overflow:hidden;
 }
@@ -534,4 +536,8 @@ p.error {
 img.loading_image {
     float:right;
     margin:4px 25px 0 0;
+}
+
+#menu {
+	width: 100%;
 }

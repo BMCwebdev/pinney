@@ -2921,3 +2921,7 @@ transition: all 0.17s ease-in-out 0s;
     text-decoration: none;
 transition: all 0.17s ease-in-out 0s;
 }
+
+html, body {
+	height: 100%;
+}
