@@ -158,6 +158,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 		background-color: rgba(5, 70, 5, 0.9);
 		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
 	}
+	
+	
+	body {
+	background: url("images/darkergreen.gif") repeat-x scroll center top #0D8050;
+	}
+
+	#background-container {
+	background: url("images/darkergreen.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+/*
+    height: 570px;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+    text-align: center;
+*/
+    }
+    
 	</style>
 	
 <!-- 	Make center div extend to bottom of browser window -->
@@ -173,18 +189,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
     });
     </script>
 
-	<script>
-	$(document).ready(function(){
-    $('#background-container img').height($(window).height() );
-    });
-    </script>
 
 </head>
 <body>
 
 	<!-- Background -->
 	<div id="background-container">
-		<img alt="" src="images/green.jpg" style="left: -50%; margin: 0 auto; right: -50%;" />
+<!-- 		<img alt="" src="images/green.jpg" style="left: -50%; margin: 0 auto; right: -50%;" /> -->
 	</div>
 	<!-- End Background -->
 
