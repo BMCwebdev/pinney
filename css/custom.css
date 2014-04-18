@@ -1,0 +1,79 @@
+.litext {
+	margin-left:165px;
+	margin-top:-21px;
+}
+
+.lititle {
+	margin-right:175px;
+}
+
+.centertextbody {
+	margin-right:175px;
+}
+
+.pagetitledropcap{
+	color: #386E5B;
+}
+
+.who-we-are h1 {
+	padding-bottom:5px;
+	font-weight: 300;
+	font-size: 35px;
+	font-family: 'NeoplantaBG';
+}
+
+p.pagetitletext {
+	margin-right: 75px;
+	color: #333333;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+div.pagetitletext {
+	margin-right: 75px;
+	color: #333333;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+@font-face {
+	font-family: 'NeoplantaBG';
+    src:  url('NeoplantaBG.ttf.woff') format('woff'),
+    url('NeoplantaBG.ttf.svg#NeoplantaBG') format('svg'),
+    url('NeoplantaBG.ttf.eot'),
+    url('NeoplantaBG.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-line2 p span.bold {
+    color: #90701D;
+    font-weight: bold;
+    }
+
+.staff-post {
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.staf-social li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #386E5B;
+    border-radius: 50%;
+    display: inline-block;
+    height: 29px;
+    transition: all 0.17s ease-in-out 0s;
+    width: 29px;
+}
+
+.staf-social li a i {
+    color: #386E5B;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    transition: all 0.17s ease-in-out 0s;
+}
+
+.staf-social li a:hover {
+    background: none repeat scroll 0 0 #386E5B;
+}
