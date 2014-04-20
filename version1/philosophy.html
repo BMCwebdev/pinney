@@ -43,155 +43,23 @@
 	
 	
 	
-<!-- 	HERE BEGINS CHANGES TO STYLESHEET FOR PROTOTYPING PURPOSES -->
-	<style>
-	body {
-    background: #B2C5BB;
-    color: #333333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857;
-	}
-	
-
-/* MIGHT WANT TO ADD THIS TO THE MAIN CSS */
-/*
-html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-html, body, #container, .container {
-    width: 100%;
-    height: 100%;
-}
-
-*/
-
-
-/*
-.topline2 {
-    min-height: 556px;
-    height: 100%;
-}
-*/
-
-html {
-    background: none;
-    margin: 0 !important;
-    overflow-x: hidden;
-    padding: 0 !important;
-}
-
-
-/*
-	.topline2, .top-line {
-  background: url(images/headerbackground.png) repeat-y;
-}
-*/
-
-.main-menu > li > a.active {
-    background: none repeat scroll 0 0 #0C9E04;
-    color: #212121;
-    }
-
-	.topline2 {
-	background: #ffffff;
-}
-
-	.top-line {
-/*
-  fallback
-  background-color: #1a82f7;
-  background: url(images/linear_bg_2.png);
-  background-repeat: repeat-x;
-*/
-  
-  /* Firefox 3.6+ */
-background: -moz-linear-gradient(top,  rgba(231,226,198,1) 0%, rgba(252,252,250,1.0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,226,198,1)), color-stop(100%,rgba(252,252,250,1.0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', endColorstr='#d9fcfcfa',GradientType=0 ); /* IE6-9 */
-}
-
-/*
-	#footer {
-		position:absolute;
-		bottom:0;
-		width:100%;
-		height:60px;
-		background:none;
-	}
-*/
-
-
-
-/*
-@media (min-width: 940px) and (max-width: 991px) {
-	.search-widget input[type="search"] {
-	width:54% !important;
-	}
-}
-*/
-
-@media (min-width: 0px) and (max-width: 1199px) {
-	.headerimage {
-	display:none
-	}
-}
-
-
-@media (min-width: 1200px) and (max-width: 999999px) {
-	.headerimagemobile {
-	display:none
-	}
-}
-
-	.clearfix .navbar-vertical {
-		margin-top:4px;
-	}
-	header.active {
-	    top: -4px;
-	}
-	
-	.navbar-vertical {
-		background-color: rgba(5, 70, 5, 0.9);
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
-	}
-	
-	body {
-	background: url("images/page.bg.color.gif") repeat-x scroll center top #008000;
-	}
-
-	#background-container {
-	background: url("images/page.bg.color.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
-/*
-    height: 570px;
-    margin: 0 auto;
-    padding: 10px 0 30px;
-    text-align: center;
-*/
-    }
-    
-    .bold {
-    color: #90701D;
-    font-weight: bold;
-    }
-    
-	</style>
-	
 <!-- 	Make center div extend to bottom of browser window -->
 	<script>
-	$(document).ready(function(){
-    $('.navbar-vertical').height($(window).height() - 1 );
-    $('.topline2').height($(window).height() - 194 );
-    });
+		$(document).ready(function(){
+	    $('.navbar-vertical').height($(window).height() - 1 );
+	    });
     </script>
-
+        
+    <script>
+    	$(document).ready(function(){
+	    var topline2height = $('.topline2').height(); 
+		var windowheight = $(window).height();
+		
+		if (topline2height < windowheight) {
+		$('.topline2').height($(window).height() - 194 );
+		}
+	    });
+	</script>
 
 </head>
 <body>
@@ -214,16 +82,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 					<span><i class="fa fa-fax"></i>Fax: 617-492-8025</span>
 					<span><i class="fa fa-envelope-o"></i>hello@pinneyandscofield.com</span>
 				</p>
-<!--
-				<ul class="social-icons">
-					<li><a class="facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="twitter" href="index.html#"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="rss" href="index.html#"><i class="fa fa-rss"></i></a></li>
-					<li><a class="google" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a class="linkedin" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
-					<li><a class="pinterest" href="index.html#"><i class="fa fa-pinterest"></i></a></li>
-				</ul>
--->
 			</div>
 			
 				<div>
@@ -236,18 +94,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-4 button1" style="padding-top:50px;">
-<!-- 						<img src="images/header-home.png" width="80%" style="padding-top:10px; float:right;"/> -->
-<!--
-						<div class="search-widget widget">
-							<form>
-								<input type="search" placeholder="Search here...">
-									<button type="submit">
-										<i class="fa fa-search"></i>
-									</button>
-							</form>
-						</div>
--->
-													<a href="#" style="float:right;">Client Login</a>
+						<a href="https://www.junxureclientview.com/2643" target="_blank" onclick="return outboundLink();" style="float:right;">Client Login</a>
 					</div>
 				</div>
 		</div>
@@ -257,11 +104,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 		<!-- Header
 		    ================================================== -->
 		<header class="clearfix">
-<!--
-			<div class="header-logo">
-				<a class="logo" href="index.html#"><img alt="" src="images/logo.png"></a>
-			</div>
--->
 			<a class="elemadded responsive-link" href="index.html#">Menu</a>
 			<div class="navbar-vertical">
 				<ul class="main-menu">
@@ -271,18 +113,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 					
 					<li class="drop"><a href="whatwedo.html"><span>What We Do</span></a>
 						<ul class="drop-down">
-							<li><a href="#"><span>Principles of Financial Planning</span></a></li>
-							<li><a href="#"><span>Principles of Investing</span></a></li>
+							<li><a href="principals-of-financial-planning.html"><span>Principles of Financial Planning</span></a></li>
+							<li><a href="principals-of-investing.html"><span>Principles of Investing</span></a></li>
 						</ul>
 					</li>
 										
 					<li><a href="ourteam.html"><span>Our Team</span></a></li>
 					<li><a href="fees.html"><span>Fees</span></a></li>
-					<li><a href="#"><span>Quarterly Newsletters</span></a></li>
-					<li><a href="#"><span>Company Documents</span></a></li>
-					<li><a href="#"><span>Investor Resources</span></a></li>
-					<li><a href="#"><span>Contact</span></a></li>
-					<li><a href="#"><span>Disclosure</span></a></li>
+					<li><a href="Quarterly-Newsletters.html"><span>Quarterly Newsletters</span></a></li>
+					<li><a href="Company-Documents.html"><span>Company Documents</span></a></li>
+					<li><a href="Investor-Resources.html"><span>Investor Resources</span></a></li>
+					<li><a href="contact.html"><span>Contact</span></a></li>
+					<li><a href="disclosure.html"><span>Disclosure</span></a></li>
 
 				</ul>
 			</div>
@@ -337,6 +179,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 			<div class="litext">– For over 25 years we have used independent outside custodians to hold our clients&rsquo; assets.  These custodians independently send confirmations after every trade and provide monthly statements that can be compared with our quarterly reports to verify the holdings are the same.  We felt this was important when we started the business and now, unfortunately, there are real life examples to show why.</div>
 		</li>
 	</ul>
+			<!-- end content -->
+							</div>
+						</div>
+				    		<!-- footer  -->
+<!--
+								<footer>
+									<div class="footer-line">
+										<p>&#169; 2014 Pinney and Scofield,  All Rights Reserved</p>
+										<a class="go-top" href="fees.html#"></a>
+									</div>
+				
+								</footer>
+-->
 							</div>
 						</div>
 			</div>

@@ -43,155 +43,26 @@
 	
 	
 	
-<!-- 	HERE BEGINS CHANGES TO STYLESHEET FOR PROTOTYPING PURPOSES -->
-	<style>
-	body {
-    background: #B2C5BB;
-    color: #333333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857;
-	}
-	
-
-/* MIGHT WANT TO ADD THIS TO THE MAIN CSS */
-/*
-html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-html, body, #container, .container {
-    width: 100%;
-    height: 100%;
-}
-
-*/
-
-
-/*
-.topline2 {
-    min-height: 556px;
-    height: 100%;
-}
-*/
-
-html {
-    background: none;
-    margin: 0 !important;
-    overflow-x: hidden;
-    padding: 0 !important;
-}
-
-
-/*
-	.topline2, .top-line {
-  background: url(images/headerbackground.png) repeat-y;
-}
-*/
-
-.main-menu > li > a.active {
-    background: none repeat scroll 0 0 #0C9E04;
-    color: #212121;
-    }
-
-	.topline2 {
-	background: #ffffff;
-}
-
-	.top-line {
-/*
-  fallback
-  background-color: #1a82f7;
-  background: url(images/linear_bg_2.png);
-  background-repeat: repeat-x;
-*/
-  
-  /* Firefox 3.6+ */
-background: -moz-linear-gradient(top,  rgba(231,226,198,1) 0%, rgba(252,252,250,1.0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,226,198,1)), color-stop(100%,rgba(252,252,250,1.0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(231,226,198,1) 0%,rgba(252,252,250,1.0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', endColorstr='#d9fcfcfa',GradientType=0 ); /* IE6-9 */
-}
-
-/*
-	#footer {
-		position:absolute;
-		bottom:0;
-		width:100%;
-		height:60px;
-		background:none;
-	}
-*/
-
-
-
-/*
-@media (min-width: 940px) and (max-width: 991px) {
-	.search-widget input[type="search"] {
-	width:54% !important;
-	}
-}
-*/
-
-@media (min-width: 0px) and (max-width: 1199px) {
-	.headerimage {
-	display:none
-	}
-}
-
-
-@media (min-width: 1200px) and (max-width: 999999px) {
-	.headerimagemobile {
-	display:none
-	}
-}
-
-	.clearfix .navbar-vertical {
-		margin-top:4px;
-	}
-	header.active {
-	    top: -4px;
-	}
-	
-	.navbar-vertical {
-		background-color: rgba(5, 70, 5, 0.9);
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
-	}
-	
-	body {
-	background: url("images/page.bg.color.gif") repeat-x scroll center top #008000;
-	}
-
-	#background-container {
-	background: url("images/page.bg.color.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
-/*
-    height: 570px;
-    margin: 0 auto;
-    padding: 10px 0 30px;
-    text-align: center;
-*/
-    }
-    
-    .bold {
-    color: #90701D;
-    font-weight: bold;
-    }
-    
-	</style>
-	
 <!-- 	Make center div extend to bottom of browser window -->
 	<script>
-	$(document).ready(function(){
-    $('.navbar-vertical').height($(window).height() - 1 );
-    $('.topline2').height($(window).height() - 194 );
-    });
+		$(document).ready(function(){
+	    $('.navbar-vertical').height($(window).height() - 1 );
+	    });
     </script>
-
+        
+    <script>
+    	$(document).ready(function(){
+	    var topline2height = $('.topline2').height(); 
+		var windowheight = $(window).height();
+		
+		if (topline2height < windowheight) {
+		$('.topline2').height($(window).height() - 194 );
+		}
+	    });
+	</script>
+	
+	
+	
 
 </head>
 <body>
@@ -247,7 +118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 							</form>
 						</div>
 -->
-													<a href="#" style="float:right;">Client Login</a>
+													<a href="https://www.junxureclientview.com/2643" target="_blank" onclick="return outboundLink();" style="float:right;">Client Login</a>
 					</div>
 				</div>
 		</div>
@@ -257,11 +128,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 		<!-- Header
 		    ================================================== -->
 		<header class="clearfix">
-<!--
-			<div class="header-logo">
-				<a class="logo" href="index.html#"><img alt="" src="images/logo.png"></a>
-			</div>
--->
 			<a class="elemadded responsive-link" href="index.html#">Menu</a>
 			<div class="navbar-vertical">
 				<ul class="main-menu">
@@ -271,18 +137,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 					
 					<li class="drop"><a href="whatwedo.html"><span>What We Do</span></a>
 						<ul class="drop-down">
-							<li><a href="#"><span>Principles of Financial Planning</span></a></li>
-							<li><a href="#"><span>Principles of Investing</span></a></li>
+							<li><a href="principals-of-financial-planning.html"><span>Principles of Financial Planning</span></a></li>
+							<li><a href="principals-of-investing.html"><span>Principles of Investing</span></a></li>
 						</ul>
 					</li>
 										
 					<li><a href="ourteam.html"><span>Our Team</span></a></li>
 					<li><a class="active" href="fees.html"><span>Fees</span></a></li>
-					<li><a href="#"><span>Quarterly Newsletters</span></a></li>
-					<li><a href="#"><span>Company Documents</span></a></li>
-					<li><a href="#"><span>Investor Resources</span></a></li>
-					<li><a href="#"><span>Contact</span></a></li>
-					<li><a href="#"><span>Disclosure</span></a></li>
+					<li><a href="Quarterly-Newsletters.html"><span>Quarterly Newsletters</span></a></li>
+					<li><a href="Company-Documents.html"><span>Company Documents</span></a></li>
+					<li><a href="Investor-Resources.html"><span>Investor Resources</span></a></li>
+					<li><a href="contact.html"><span>Contact</span></a></li>
+					<li><a href="disclosure.html"><span>Disclosure</span></a></li>
 
 				</ul>
 			</div>
@@ -304,7 +170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 							<div class="who-we-are">
 <h1><span class="pagetitledropcap">F</span>ees</h1>
 					
-				<div class="pagetitletext">Pinney & Scofield, Inc. offers the combined services of financial planning and portfolio management. Our clients are able to concentrate on the important things in life, such as family and community, because they have the confidence that their finances are in great shape. This confidence is born from the knowledge that there is a plan in place and that we are actively monitoring their finances. We look for and use the very best in academic theory and apply it to the financial planning and investment recommendations we make.</div>
+				<div class="pagetitletext2">Pinney & Scofield, Inc. offers the combined services of financial planning and portfolio management. Our clients are able to concentrate on the important things in life, such as family and community, because they have the confidence that their finances are in great shape. This confidence is born from the knowledge that there is a plan in place and that we are actively monitoring their finances. We look for and use the very best in academic theory and apply it to the financial planning and investment recommendations we make.</div>
 
 <div><img src="images/spacer.gif" height="20"></div>
 
@@ -313,6 +179,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 <div><img src="images/spacer.gif" height="10"></div>
 
 		<div class="pagetitletext"><span class="bold">Portfolio Management</span> – Our portfolio management method, described in detail in <a href="#">Principles of Investing</a>, is based on the idea that markets are efficient and that market activity cannot be predicted. We establish fully diversified portfolios of index-style mutual funds (see <a href="#">Factor Funds versus Index Funds</a>). Accounts are located at Charles Schwab & Co., Inc. Pinney & Scofield, Inc. is granted a limited power of attorney. We monitor the accounts and place the trades necessary to rebalance the portfolio to restore allocations to the desired targets. In addition to Schwab’s monthly account statements, clients receive reports on a quarterly basis from us along with a letter (see our <a href="#">past letters</a>) discussing the accounts and current events. We also provide all necessary tax information on the accounts.</div>
+							</div>
+			<!--end content -->
+				    		<!-- footer  -->
+<!--
+								<footer>
+									<div class="footer-line">
+										<p>&#169; 2014 Pinney and Scofield,  All Rights Reserved</p>
+										<a class="go-top" href="fees.html#"></a>
+									</div>
+				
+								</footer>
+-->
+								<!-- End footer -->
 							</div>
 						</div>
 			</div>
