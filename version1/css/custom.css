@@ -215,7 +215,16 @@ html {
     }
 
 	.topline2 {
-	background: #ffffff;
+/* 	background: #ffffff; */
+	background: #fbfbf9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fbfbf9 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbf9), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fbfbf9 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fbfbf9 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fbfbf9 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fbfbf9 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbf9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 	.top-line {
@@ -271,9 +280,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 }
 
 	body {
-	background: url("../images/boob.gif") repeat-x scroll center top #008000;
+	background: url("../images/gradient-line.gif") repeat-x scroll center top #008000;
 	}
 
 	#background-container {
-	background: url("../images/boob.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+	background: url("../images/gradient.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
 	}
+	
+.col-md-4 .staff-post {
+	width:92%;
+}
