@@ -313,3 +313,8 @@ header {
     z-index: -1;
 }
 */
+
+    .fix2{
+    position:fixed;
+    top:0;
+}
