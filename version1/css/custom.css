@@ -240,8 +240,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 }
 
 
-@media (min-width: 0px) and (max-width: 1199px) {
+@media (min-width: 0px) and (max-width: 990px) {
 	.headerimage {
+	display:none
+	}
+	.headerimagetablet {
+	display:none
+	}
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+	.headerimage {
+	display:none
+	}
+	.headerimagemobile {
 	display:none
 	}
 }
@@ -249,6 +260,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 
 @media (min-width: 1200px) and (max-width: 999999px) {
 	.headerimagemobile {
+	display:none
+	}
+	.headerimagetablet {
 	display:none
 	}
 }
@@ -290,3 +304,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 .col-md-4 .staff-post {
 	width:92%;
 }
+
+/*
+header {
+    background: none repeat scroll 0 0 rgba(5, 70, 5, 0.9);
+    padding-top: 190px;
+    top: 0;
+    z-index: -1;
+}
+*/

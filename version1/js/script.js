@@ -344,7 +344,7 @@ $(document).ready(function($) {
 
 		var docElem = document.documentElement,
 			didScroll = false,
-			changeHeaderOn = 40;
+			changeHeaderOn = 190;
 			document.querySelector( 'header' );
 		function init() {
 			window.addEventListener( 'scroll', function() {
