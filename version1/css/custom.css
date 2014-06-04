@@ -75,14 +75,14 @@ div.pagetitletext2 {
     border: 1px solid #386E5B;
     border-radius: 50%;
     display: inline-block;
-    height: 29px;
+    height: 35px;
     transition: all 0.17s ease-in-out 0s;
-    width: 29px;
+    width: 35px;
 }
 
 .staf-social li a i {
     color: #386E5B;
-    font-size: 13px;
+    font-size: 24px;
     line-height: 29px;
     text-align: center;
     transition: all 0.17s ease-in-out 0s;
@@ -317,4 +317,8 @@ header {
     .fix2{
     position:fixed;
     top:0;
+}
+
+.email .fa {
+	width: 100%;
 }
