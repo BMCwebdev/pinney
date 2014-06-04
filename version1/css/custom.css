@@ -267,6 +267,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', end
 	}
 }
 
+@media (max-width: 421px) {
+	.headerimagemobile img {
+		height:150px !important;
+	}
+}
 	.clearfix .navbar-vertical {
 		margin-top:4px;
 	}

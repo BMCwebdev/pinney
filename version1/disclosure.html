@@ -50,11 +50,25 @@
 	    });
     </script>
         
+<!--
 	<script>
 		$(document).ready(function(){
 	    $('.topline2').height($(window).height() - 1 );
 	    });
     </script>
+-->
+    
+       <script>
+	    	$(document).ready(function(){
+		    var topline2height = $('.topline2').height(); 
+			var windowheight = $(window).height();
+			
+			if (topline2height < windowheight) {
+			$('.topline2').height($(window).height() - 1 );
+			}
+		    });
+		</script>
+    
     <style>
     .topline2 {
     min-height: 900px;
