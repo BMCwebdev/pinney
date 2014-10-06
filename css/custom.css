@@ -119,6 +119,13 @@ div.pagetitletext2 {
 	padding-bottom: 20px;
 }
 
+#team img {
+	height:auto;
+	width:auto;
+	display: block;
+	padding-bottom: 20px;
+}
+
 .who-we-are h1 {
 	font-weight: 300;
 	font-family: 'NeoplantaBG';
