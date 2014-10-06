@@ -122,6 +122,8 @@ div.pagetitletext2 {
 #team img {
 	height:auto;
 	width:auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 	padding-bottom: 20px;
 }
