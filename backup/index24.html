@@ -1,0 +1,338 @@
+<!doctype html>
+
+
+<html lang="en" class="no-js">
+<head>
+	<title>Pinney and Scofield</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Asul:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="css/fullwidth.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.migrate.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/plugins-scroll.js"></script>
+	
+     <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	
+	
+	
+<!-- 	HERE BEGINS CHANGES TO STYLESHEET FOR PROTOTYPING PURPOSES -->
+	<style>
+	body {
+    background: #B2C5BB;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+	}
+	
+
+/* MIGHT WANT TO ADD THIS TO THE MAIN CSS */
+/*
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html, body, #container, .container {
+    width: 100%;
+    height: 100%;
+}
+
+*/
+
+
+.top-line2 {
+    min-height: 556px;
+    height: 100%;
+}
+
+html {
+    background: none;
+    margin: 0 !important;
+    overflow-x: hidden;
+    padding: 0 !important;
+}
+
+
+/*
+	.top-line2, .top-line {
+  background: url(images/headerbackground.png) repeat-y;
+}
+*/
+
+
+/*
+	.top-line2 {
+	background: #e7e2c6;
+}
+*/
+
+	.top-line, .top-line2 {
+/*
+  fallback
+  background-color: #1a82f7;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+*/
+  
+  /* Firefox 3.6+ */
+background: -moz-linear-gradient(top,  rgba(231,226,198,1) 0%, rgba(252,252,250,0.85) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,226,198,1)), color-stop(100%,rgba(252,252,250,0.85))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,0.85) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,0.85) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(231,226,198,1) 0%,rgba(252,252,250,0.85) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(231,226,198,1) 0%,rgba(252,252,250,0.85) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e2c6', endColorstr='#d9fcfcfa',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+	#footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;
+		background:none;
+	}
+*/
+
+
+
+/*
+@media (min-width: 940px) and (max-width: 991px) {
+	.search-widget input[type="search"] {
+	width:54% !important;
+	}
+}
+*/
+
+@media (min-width: 0px) and (max-width: 1199px) {
+	.headerimage {
+	display:none
+	}
+}
+
+
+@media (min-width: 1200px) and (max-width: 999999px) {
+	.headerimagemobile {
+	display:none
+	}
+}
+
+	.clearfix .navbar-vertical {
+		margin-top:4px;
+	}
+	header.active {
+	    top: -4px;
+	}
+	
+	.navbar-vertical {
+		background-color: rgba(5, 70, 5, 0.9);
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
+	}
+	</style>
+	
+<!-- 	Make center div extend to bottom of browser window -->
+	<script>
+	$(document).ready(function(){
+    $('.top-line2').height($(window).height() - 219 );
+    });
+    </script>
+
+	<script>
+	$(document).ready(function(){
+    $('.navbar-vertical').height($(window).height() - 185 );
+    });
+    </script>
+
+	<script>
+	$(document).ready(function(){
+    $('#background-container img').height($(window).height() );
+    });
+    </script>
+
+
+</head>
+<body>
+
+	<!-- Background -->
+	<div id="background-container">
+		<img alt="" src="images/bridge/bridgebig2.jpg" style="left: -50%; margin: 0 auto; right: -50%;" />
+	</div>
+	<!-- End Background -->
+
+	<!-- Container -->
+	<div id="container" class="container">
+
+		<!-- top-line
+		    ================================================== -->
+		<div class="top-line">
+			<div class="container skybar">
+				<p>
+										<span><i class="fa fa-fax"></i>Fax: 617-492-8025</span>
+					<span><i class="fa fa-envelope-o"></i>hello@pinneyandscofield.com</span>
+				</p>
+<!--
+				<ul class="social-icons">
+					<li><a class="facebook" href="index.html#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="twitter" href="index.html#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="rss" href="index.html#"><i class="fa fa-rss"></i></a></li>
+					<li><a class="google" href="index.html#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="linkedin" href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a class="pinterest" href="index.html#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+-->
+			</div>
+			
+				<div>
+					<div class="col-lg-9 col-md-8 col-sm-8">
+						<div class="headerimage">
+							<img src="images/logoheader2.png" / style="float:left">
+						</div>
+						<div class="headerimagemobile">
+							<img src="images/headermobile.png" / height="200" style="float:left;">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 button1" style="padding-top:50px;">
+<!-- 						<img src="images/header-home.png" width="80%" style="padding-top:10px; float:right;"/> -->
+<!--
+						<div class="search-widget widget">
+							<form>
+								<input type="search" placeholder="Search here...">
+									<button type="submit">
+										<i class="fa fa-search"></i>
+									</button>
+							</form>
+						</div>
+-->
+													<a href="#" style="float:right;">Client Login</a>
+					</div>
+				</div>
+		</div>
+		
+		<!-- End Top line -->
+
+		<!-- Header
+		    ================================================== -->
+		<header class="clearfix">
+<!--
+			<div class="header-logo">
+				<a class="logo" href="index.html#"><img alt="" src="images/logo.png"></a>
+			</div>
+-->
+			<a class="elemadded responsive-link" href="index.html#">Menu</a>
+			<div class="navbar-vertical">
+				<ul class="main-menu">
+
+					<li class="drop"><a class="active" href="index.html"><span>Home</span></a>
+						<ul class="drop-down">
+							<li><a href="#"><span>Dropdown Example</span></a></li>
+							<li><a href="#"><span>Dropdown Example</span></a></li>
+							<li><a href="#"><span>Dropdown Example</span></a></li>
+							<li><a href="#"><span>Dropdown Example</span></a></li>
+						</ul>
+					</li>
+					<li class="drop"><a href="#"><span>Philosophy</span></a>
+<!--
+						<ul class="drop-down">
+							<li><a href="index.html"><span>Revolution Slider</span></a></li>
+							<li><a href="flexslider.html"><span>Flexslider</span></a></li>
+						</ul>
+-->
+					</li>
+					<li><a href="#"><span>What We Do</span></a></li>
+					<li class="drop"><a href="#"><span>Our Team</span></a>
+<!--
+						<ul class="drop-down">
+							<li><a href="portfolio-2col.html"><span>Portfolio 2col</span></a></li>
+							<li><a href="portfolio-3col.html"><span>Portfolio 3col</span></a></li>
+							<li class="drop"><a href="index.html#"><span>Level 3</span></a>
+								<ul class="drop-down level3">
+									<li><a href="index.html#"><span>Level 3</span></a></li>
+									<li><a href="index.html#"><span>Level 3</span></a></li>
+									<li><a href="index.html#"><span>Level 3</span></a></li>
+								</ul>
+							</li>
+						</ul>
+-->
+					</li>
+					<li><a href="#"><span>Fees</span></a></li>
+					<li class="drop"><a href="#"><span>Quarterly Newsletters</span></a>
+<!--
+						<ul class="drop-down">
+							<li><a href="blog-three-col.html"><span>Blog 3col</span></a></li>
+							<li><a href="blog-nosidebar.html"><span>Blog no sidebar</span></a></li>
+							<li><a href="blog-right-sidebar.html"><span>Blog Right Sidebar</span></a></li>
+							<li><a href="blog-left-sidebar.html"><span>Blog Left Sidebar</span></a></li>
+						</ul>
+-->
+					</li>
+					<li><a href="#"><span>Company Documents</span></a></li>
+					<li><a href="#"><span>Investor Resources</span></a></li>
+					<li><a href="#"><span>Contact</span></a></li>
+					<li><a href="#"><span>Disclosure</span></a></li>
+
+				</ul>
+			</div>
+		</header>
+		<!-- End Header -->
+
+		<!-- content 
+			================================================== -->
+		<div id="content">
+			<div class="inner-content">
+				<!-- slider 
+					================================================== -->
+
+				<!-- Content sections 
+					================================================== -->
+					
+					<div style="height:3px;">&nbsp;</div>
+						<div class="top-line2">
+							<div class="who-we-are">
+							<h2>Who We Are</h2>
+							<p>We are financial planners and investment managers. For over twenty five years Pinney & Scofield has worked with individuals and families to help them plan their future and achieve their most important financial goals. People often look for financial planning due to a specific event or problem – college planning, a home purchase, or retirement planning for example. They will stay with an advisor for the long-term only if they receive consistent, thoughtful and conflict-free advice.</p>
+							<p>We invite you to browse our website and learn about our company and our services. You will discover a fresh, honest approach to financial planning and investing that creates long-term relationships with long-term investors.</p>
+							<p><img src="images/whoweare.jpg" /></p>
+							<p>Our office is located in the historic Harvard Square area of Cambridge, MA.
+							</p>
+							<img src="images/spacer.gif" height="25px;" />
+											<div style="text-align:center;padding-top:215px;">
+												<a href="http://www.pinneyandscofield.com/quarterly-newsletter-january-2014/"><h4 style="text-align:center;"><span style="padding-right:20px;font-size: 17px;">Click Here To Read Our Latest Newsletter</span><img src="images/newsletter.jpg" height=50 /></h4>
+											</div>
+								</a>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

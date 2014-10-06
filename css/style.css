@@ -154,15 +154,17 @@ ul.social-icons li a:hover {
 
 header {
     width: 270px;
-    position: fixed;
+    position: absolute;
     top: 189px;
     left: 50%;
     margin-left: -570px;
     z-index: 9999;
+/*
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
     -o-transition: all 0.17s ease-in-out;
+*/
 }
 
 header.active {
@@ -1959,6 +1961,11 @@ ul.depth {
 }
 
 .staff-post-gal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    position: relative;
     width: 100%;
 }
 

@@ -121,7 +121,7 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
-	var contact = {"lat":"51.51152", "lon":"-0.104198"}; //Change a map coordinate here!
+	var contact = {"lat":"42.3738926", "lon":"-71.1237738"}; //Change a map coordinate here!
 
 	try {
 		var mapContainer = $('.map');
@@ -340,11 +340,12 @@ $(document).ready(function($) {
 	/*	Header animate after scroll
 	/* ---------------------------------------------------------------------- */
 
+/*
 	(function() {
 
 		var docElem = document.documentElement,
 			didScroll = false,
-			changeHeaderOn = 40;
+			changeHeaderOn = 190;
 			document.querySelector( 'header' );
 		function init() {
 			window.addEventListener( 'scroll', function() {
@@ -373,7 +374,22 @@ $(document).ready(function($) {
 		init();
 		
 	})();
+*/
 
+	/* ---------------------------------------------------------------------- */
+	/*	BRIAN VERSION
+	/* ---------------------------------------------------------------------- */
+
+$(window).scroll(function() {
+				if ($(this).scrollTop() > 190) {
+                    $('header').addClass('fix2');
+		        } else {
+		            $('header').removeClass('fix2');
+		        }
+		});
+		
+		
+		
 	/* ---------------------------------------------------------------------- */
 	/*	menu responsive
 	/* ---------------------------------------------------------------------- */
